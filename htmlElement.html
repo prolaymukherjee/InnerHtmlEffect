@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is JavaScript</title>
+	</head>
+	<body>
+	
+	<p id="p1">This is HTML Element with javaScript!</p>
+    <p id="p2">Start With Prolay!</p>
+	
+		<form id="frm1" action="">
+			  First name: <input type="text" name="fname" value="Arafath"><br>
+			  Last name: <input type="text" name="lname" value="Hamja"><br><br>
+				<input type="submit" value="Submit">
+		</form> 
+		<p>Click "Try it" to display the value of each element in the form.</p>
+		
+		<button onclick="myFunction()">Try it</button>
+		
+		<p id="test"></p>
+		<script>
+			function myFunction() {
+			var x = document.forms["frm1"];
+			var text = "";
+			var i;
+			for (i = 0; i < x.length ;i++) {
+				text += x.elements[i].value + "<br>";
+			}
+			document.getElementById("test").innerHTML = text;
+       }
+	   
+	   document.getElementById("p1").style.color = "blue";
+	   document.getElementById("p2").style.fontFamily = "Arial";
+		</script>
+	</body>
+</html>
